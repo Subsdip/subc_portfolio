@@ -38,10 +38,9 @@
 
 .main-project-flex-increase-expanded{
     background: linear-gradient(135deg, #7fffd4, #ce8cfd);
-    /* background-color: #F9FAFB; */
     border-radius: 20px;
     padding: 30px;
-    width: 60%;
+    min-width: 60%;
     height: 60%;
     overflow: auto;
 }

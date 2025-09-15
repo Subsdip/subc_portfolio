@@ -1,5 +1,4 @@
 .main-flex-navbar{
-    background:  linear-gradient(180deg, aquamarine, white);
     display: flex;
     flex-direction: row;
     max-width: 95vw;
@@ -7,8 +6,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 135px;
     align-items: center;
     justify-content: center;
     gap: 120px;
@@ -37,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        line-height: clamp(2rem, 4vw, 3.5rem);
     }
 }
 

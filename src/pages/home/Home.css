@@ -2,7 +2,7 @@
     --radius: 10px;
     --margin: 20px;
 
-    max-width: 95dvw;
+    max-width: clamp(300px, 95dvw, 1400px);
     min-height: 40dvh;
     margin: 30px;
     border-radius: 5px;
