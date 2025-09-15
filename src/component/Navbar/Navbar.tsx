@@ -3,31 +3,30 @@ import './Navbar.css';
 import Circle from "../Circle/Circle.tsx";
 import Profilepic from '../../assets/profile pic.jpg';
 import { FaCodepen, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
 
-    const text = ``
-    const letter = text.split("");
+    // const text = ``
+    // const letter = text.split("");
 
-    const container = {
-        hidden: { opacity: 0 },
-        visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.05,
-        },
-        },
-    };
+    // const container = {
+    //     hidden: { opacity: 0 },
+    //     visible: {
+    //     opacity: 1,
+    //     transition: {
+    //         staggerChildren: 0.05,
+    //     },
+    //     },
+    // };
 
-     const child = {
-        hidden: { opacity: 0, y: "0.25em" },
-        visible: {
-        opacity: 1,
-        y: "0em",
-        transition: { duration: 0.3},
-        },
-    };
+    //  const child = {
+    //     hidden: { opacity: 0, y: "0.25em" },
+    //     visible: {
+    //     opacity: 1,
+    //     y: "0em",
+    //     transition: { duration: 0.3},
+    //     },
+    // };
 
     return(
         <>
