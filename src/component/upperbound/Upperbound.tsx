@@ -109,7 +109,7 @@ const Slide = forwardRef(function Slide(
 function LeftArrow() {
     return (
         <div>
-            <ArrowLeft size={28} color="#017f7fff"/>
+            <ArrowLeft size={32} color="#017f7fff"/>
         </div>
     );
 }
@@ -117,7 +117,7 @@ function LeftArrow() {
 function RightArrow() {
     return (
         <div>
-            <ArrowRight size={28} color="#017f7fff"/>
+            <ArrowRight size={32} color="#017f7fff"/>
         </div>
     );
 }

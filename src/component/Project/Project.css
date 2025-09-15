@@ -40,7 +40,7 @@
     background: linear-gradient(135deg, #7fffd4, #ce8cfd);
     border-radius: 20px;
     padding: 30px;
-    min-width: 60%;
+    width: 60%;
     height: 60%;
     overflow: auto;
 }
