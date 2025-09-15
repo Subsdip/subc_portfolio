@@ -33,9 +33,9 @@ const Navbar: React.FC = () => {
             <div className="main-flex-navbar">
                 <Circle src={Profilepic}/>
                 <div className="main-flex-intro">
-                    <h1 style={{ fontSize: "clamp(1rem, 4vw, 3rem)" }}>Subhadip Mukherjee</h1>
-                    <h2 style={{ fontSize: "clamp(.5rem, 3vw, 1.5rem)" }}>🚀 Java Full Stack Engineer ☕💻🌐</h2>
-                    <h5 style={{ fontSize: "clamp(.1rem, 2vw, 1rem)" }}>I build reliable digital experiences that just work.</h5>
+                    <h1 style={{fontSize: "2.5rem"}}>Subhadip Mukherjee</h1>
+                    <h2 style={{fontSize: "1.5rem"}}>🚀Java Full Stack Engineer ☕💻🌐</h2>
+                    <h5 style={{fontSize: "1.1rem"}}>"I build reliable digital experiences that just work."</h5>
                 </div>
                 <div className="main-flex-icons">
                         <a
