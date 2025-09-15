@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css';
 import Circle from "../Circle/Circle.tsx";
 import Profilepic from '../../assets/profile pic.jpg';
-import { FaCodepen, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
 
