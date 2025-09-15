@@ -1,0 +1,48 @@
+.main-upperbound-flex{
+    background: linear-gradient(180deg, white, aquamarine);
+    max-width: 95vw;
+    min-height: 40vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width: 800px){
+    .main-upperbound-flex{
+        background: none;
+    }
+}
+
+.main-upperbound-flex-shadow{
+    background: none;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-upperbound-flex-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 35vw;
+    min-height: 55vh;
+}
+
+.nav-button {
+    background: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
