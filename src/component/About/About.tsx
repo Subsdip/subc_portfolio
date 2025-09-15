@@ -1,7 +1,7 @@
 import React from "react";
 import './About.css';
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const About: React.FC = () => {
@@ -24,9 +24,35 @@ const About: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    // Open container
+    const openContainer = () => {
+        setIsOpen(true);
+        history.pushState({ containerOpen: true }, "");
+    };
+
+    // Close container
+    const closeContainer = () => {
+        setIsOpen(false);
+        history.back(); // remove dummy state
+    };
+
+    // Listen for back button (popstate)
+    useEffect(() => {
+        const handlePopState = () => {
+        if (isOpen) {
+            setIsOpen(false); // close if open
+        }
+        };
+
+        window.addEventListener("popstate", handlePopState);
+        return () => {
+        window.removeEventListener("popstate", handlePopState);
+        };
+    }, [isOpen]);
+
     return (
         <>
-            <motion.div className="main-about-flex" onClick={() => setIsOpen(true)}
+            <motion.div className="main-about-flex" onClick={() => (setIsOpen(true),openContainer)}
                 whileHover={{
                     scale: [null, 1.1, 1.1],
                     transition: {
@@ -56,7 +82,7 @@ const About: React.FC = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => (setIsOpen(false), closeContainer())}    
                 >
                     <motion.div
                     initial={{ scale: 0, opacity: 0 }}
