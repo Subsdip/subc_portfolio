@@ -39,43 +39,46 @@ const Upperbound: React.FC = () => {
     // );
 
     return (
-        <div
+        <>
+            <div
             className="main-upperbound-flex"
             onPointerMove={(e) => {
                 gradientX.set(e.clientX / width);
                 gradientY.set(e.clientY / height);
             }}
-        >
-            <motion.div
-                ref={ref}
-                className="main-upperbound-flex-shadow"
-                onPointerEnter={() => measure()}
             >
-                <div className="main-upperbound-flex-inner">
-                    <motion.button
-                        className="nav-button"
-                        onClick={() => setSlide(-1)}
-                        whileTap={{ scale: 0.9 }}
-                    >
-                        <LeftArrow />
-                    </motion.button>
+                <motion.div
+                    ref={ref}
+                    className="main-upperbound-flex-shadow"
+                    onPointerEnter={() => measure()}
+                >
+                    <div className="main-upperbound-flex-inner">
+                        <motion.button
+                            className="nav-button"
+                            onClick={() => setSlide(-1)}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            <LeftArrow />
+                        </motion.button>
 
-                    <AnimatePresence custom={direction} initial={false} mode="popLayout">
-                            <Slide key={selectedIndex}>
-                                    {items[selectedIndex]}
-                            </Slide>
-                    </AnimatePresence>
+                        <AnimatePresence custom={direction} initial={false} mode="popLayout">
+                                <Slide key={selectedIndex}>
+                                        {items[selectedIndex]}
+                                </Slide>
+                        </AnimatePresence>
 
-                    <motion.button
-                        className="nav-button"
-                        onClick={() => setSlide(1)}
-                        whileTap={{ scale: 0.9 }}
-                    >
-                        <RightArrow />
-                    </motion.button>
-                </div>
-            </motion.div>
-        </div>
+                        <motion.button
+                            className="nav-button"
+                            onClick={() => setSlide(1)}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            <RightArrow />
+                        </motion.button>
+                    </div>
+                </motion.div>
+            </div>
+            <h5 style={{fontSize: "clamp(.7rem, .2vw, 1.5rem)"}}>© 2025 Crafted by Subc 😄x</h5>
+        </>
     );
 };
 
