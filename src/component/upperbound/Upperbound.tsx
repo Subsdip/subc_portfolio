@@ -7,7 +7,7 @@ import Resume from "../Resume/Resume.tsx";
 import Experience from "../Experience/Experience.tsx";
 import Skills from "../Skills/Skills.tsx";
 import { ArrowRight, ArrowLeft} from "lucide-react";
-import { motion, AnimatePresence, usePresenceData, wrap, useMotionValue, useTransform } from "motion/react";
+import { motion, AnimatePresence, usePresenceData, wrap, useMotionValue} from "motion/react";
 import { useState, forwardRef, useRef, useEffect } from "react";
 
 
@@ -30,13 +30,13 @@ const Upperbound: React.FC = () => {
     }
 
     const ref = useRef<HTMLDivElement>(null);
-    const [{ width, height, top, left }, measure] = useElementDimensions(ref);
+    const [{ width, height }, measure] = useElementDimensions(ref);
     const gradientX = useMotionValue(0.5);
     const gradientY = useMotionValue(0.5);
 
-    const background = useTransform(() =>
-        `conic-gradient(from 0deg at calc(${gradientX.get() * 100}% - ${left}px) calc(${gradientY.get() * 100}% - ${top}px), #defbffff, #f0f0f0ff, #e7faffff, #d4f6fbff)`
-    );
+    // const background = useTransform(() =>
+    //     `conic-gradient(from 0deg at calc(${gradientX.get() * 100}% - ${left}px) calc(${gradientY.get() * 100}% - ${top}px), #defbffff, #f0f0f0ff, #e7faffff, #d4f6fbff)`
+    // );
 
     return (
         <div
