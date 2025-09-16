@@ -28,31 +28,28 @@ const About: React.FC = () => {
     const dark = useSelector((state: RootState) => state.theme.dark);
 
     const openContainer = () => {
-        setIsOpen(true);
-        history.pushState({ containerOpen: true }, "");
+        window.history.pushState({ containerOpen: true }, "");
     };
 
     const closeContainer = () => {
-        setIsOpen(false);
-        history.back(); 
+        window.history.back(); 
     };
 
     useEffect(() => {
-        const handlePopState = () => {
-        if (isOpen) {
-            setIsOpen(false); 
-        }
+    const handlePopState = () => {
+        setIsOpen(false);
     };
 
-        window.addEventListener("popstate", handlePopState);
-        return () => {
+    window.addEventListener("popstate", handlePopState);
+    return () => {
         window.removeEventListener("popstate", handlePopState);
-        };
-    }, [isOpen]);
+    };
+    }, []);
+
 
     return (
         <>
-            <motion.div className="main-about-flex" onClick={() => (setIsOpen(true),openContainer)}
+            <motion.div className="main-about-flex" onClick={() => (setIsOpen(true),openContainer())}
                 whileHover={{
                     scale: [null, 1.1, 1.1],
                     transition: {
