@@ -73,7 +73,7 @@ const About: React.FC = () => {
                 }}>
                     <h1>🧑</h1>
                 </motion.div>
-                <h2 >About</h2>
+                <h2 style={{color: dark ? "white" : "#004646"}}>About</h2>
             </motion.div>
 
             <AnimatePresence>

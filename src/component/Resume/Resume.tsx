@@ -20,7 +20,8 @@ const Resume: React.FC = () => {
                         times: [0, 0.2, 1],
                         ease: ["easeInOut", "easeOut"],
                     },
-                }}>
+                }}
+                style={{background: dark ? "linear-gradient(135deg, #1a4d4a, #a0522d)" : "linear-gradient(135deg, #7fffd4, #ffdab9)"}}>
                 <motion.div
                 animate={{ y: [0, -3, 0] }} 
                 transition={{
@@ -31,7 +32,7 @@ const Resume: React.FC = () => {
                 }}>
                    <h1>📄</h1> 
                 </motion.div>   
-                <h2 style={{color: "#004646"}}>Resume</h2>
+                <h2 style={{color: dark ? "white" : "#004646"}}>Resume</h2>
             </motion.div>
 
             <AnimatePresence>

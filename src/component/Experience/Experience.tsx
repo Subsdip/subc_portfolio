@@ -75,7 +75,8 @@ const Experience: React.FC = () => {
                         times: [0, 0.2, 1],
                         ease: ["easeInOut", "easeOut"],
                     },
-                }}>
+                }}
+                style={{background: dark ? "linear-gradient(135deg, #00a7a7ff, #c42b10ff)" : "linear-gradient(135deg, #7fffd4, #fca07e)"}}>
                 <motion.div
                 animate={{ y: [0, -3, 0] }} 
                 transition={{
@@ -86,7 +87,7 @@ const Experience: React.FC = () => {
                 }}>
                     <h1>📈</h1>
                 </motion.div>
-                <h2 style={{color: "#004646"}}>Experience</h2>
+                <h2 style={{color: dark ? "white" : "#004646"}}>Experience</h2>
             </motion.div>
 
             <AnimatePresence>

@@ -96,7 +96,8 @@ const Project: React.FC = () => {
                         times: [0, 0.2, 1],
                         ease: ["easeInOut", "easeOut"],
                     },
-                }}>
+                }}
+                style={{background: dark ? "linear-gradient(135deg, #005c53ff, #6d1aa1ff)" : "linear-gradient(135deg, #7fffd4, #ce8cfd)"}}>
                 <motion.div
                 animate={{ y: [0, -3, 0] }} 
                 transition={{
@@ -107,7 +108,7 @@ const Project: React.FC = () => {
                 }}>
                     <h1>🚀</h1>
                 </motion.div>  
-                <h2 style={{color: "#004646"}}>Projects</h2>
+                <h2 style={{color: dark ? "white" : "#004646"}}>Projects</h2>
             </motion.div>
 
             <AnimatePresence>

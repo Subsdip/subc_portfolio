@@ -86,7 +86,8 @@ const Skills: React.FC = () => {
                         times: [0, 0.2, 1],
                         ease: ["easeInOut", "easeOut"],
                     },
-                }}>
+                }}
+                style={{background: dark ? "linear-gradient(135deg, #0f4c4c, #993366)" : "linear-gradient(135deg, #7fffd4, #ff93c9)"}}>
                 <motion.div
                     animate={{ y: [0, -3, 0] }} 
                     transition={{
@@ -97,7 +98,7 @@ const Skills: React.FC = () => {
                 }}>
                     <h1>⚙️</h1>
                 </motion.div>
-               <h2 style={{color: "#004646"}}>Skills</h2>
+               <h2 style={{color: dark ? "white" : "#004646"}}>Skills</h2>
             </motion.div>
 
             <AnimatePresence>
