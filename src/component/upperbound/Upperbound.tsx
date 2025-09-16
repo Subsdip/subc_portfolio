@@ -37,10 +37,6 @@ const Upperbound: React.FC = () => {
     const gradientX = useMotionValue(0.5);
     const gradientY = useMotionValue(0.5);
 
-    // const background = useTransform(() =>
-    //     `conic-gradient(from 0deg at calc(${gradientX.get() * 100}% - ${left}px) calc(${gradientY.get() * 100}% - ${top}px), #defbffff, #f0f0f0ff, #e7faffff, #d4f6fbff)`
-    // );
-
     return (
         <>
             <div
