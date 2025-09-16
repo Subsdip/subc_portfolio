@@ -44,8 +44,7 @@ const Upperbound: React.FC = () => {
     return (
         <>
             <div
-            className="main-upperbound-flex"
-            style={{ background: dark ? "none" : "linear-gradient(180deg, white, aquamarine)" }}
+            className={dark ? "main-upperbound-flex-dark" : "main-upperbound-flex"}
             onPointerMove={(e) => {
                 gradientX.set(e.clientX / width);
                 gradientY.set(e.clientY / height);
