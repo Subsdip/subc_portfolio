@@ -116,7 +116,12 @@ const Skills: React.FC = () => {
                         >
                             <div className="main-skill-nav">
                                 <h1>✔️ Skills</h1>
-                                <button onClick={() => setIsOpen(false)}>❌</button>
+                                <motion.div
+                                animate={{ rotate: 180 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <button onClick={() => setIsOpen(false)}>❌</button>
+                                </motion.div>
                             </div>
                             {sectionObj.map((project, index) => (
                                 <div className="main-skill-section" key={index}>

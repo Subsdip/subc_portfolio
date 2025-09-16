@@ -39,9 +39,7 @@
 
 .main-about-flex-increase-expanded{
     background: linear-gradient(135deg, #7fffd4, #dda0dd);
-    /* background-color: #F9FAFB; */
     border-radius: 20px;
-    padding: 30px;
     width: 60%;
     height: 60%;
     overflow: auto;
@@ -52,13 +50,19 @@
 }
 
 .main-about-nav{
+    background: linear-gradient(135deg, #7fffd4, #dda0dd);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    height: 90px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.main-about-nav > button{
+.main-about-nav button{
     background: none;
     border: none;
     padding: 0;
@@ -71,7 +75,8 @@
 }
 
 .main-about-nav-section {
-    margin-top: 20px;
+    padding: 30px;
+    margin-top: 10px;
     font-size: large;
     font-weight: 600;
     line-height: 4dvh;

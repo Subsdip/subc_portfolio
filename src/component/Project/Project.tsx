@@ -126,7 +126,12 @@ const Project: React.FC = () => {
                         >
                             <div className="main-project-nav">
                                 <h1>✔️ Projects</h1>
-                                <button onClick={() => setIsOpen(false)}>❌</button>
+                                <motion.div
+                                animate={{ rotate: 180 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <button onClick={() => setIsOpen(false)}>❌</button>
+                                </motion.div>
                             </div>
                             {sectionObj.map((project, index) => (
                                 <div className="main-project-section" key={index}>

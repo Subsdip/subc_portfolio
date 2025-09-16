@@ -40,7 +40,6 @@
     background: linear-gradient(135deg, #7fffd4, #fca07e);
     /* background-color: #F9FAFB; */
     border-radius: 20px;
-    padding: 30px;
     width: 60%;
     height: 60%;
     overflow: auto;
@@ -51,13 +50,19 @@
 }
 
 .main-experience-nav{
+    background: linear-gradient(135deg, #7fffd4, #fca07e);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    height: 90px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.main-experience-nav > button{
+.main-experience-nav button{
     background: none;
     border: none;
     padding: 0;
@@ -74,7 +79,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 20px;
+    padding: 25px;
+    margin-top: 10px;
     font-size: large;
     font-weight: 600;
     line-height: 5dvh;

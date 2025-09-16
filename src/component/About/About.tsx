@@ -24,25 +24,22 @@ const About: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    // Open container
     const openContainer = () => {
         setIsOpen(true);
         history.pushState({ containerOpen: true }, "");
     };
 
-    // Close container
     const closeContainer = () => {
         setIsOpen(false);
-        history.back(); // remove dummy state
+        history.back(); 
     };
 
-    // Listen for back button (popstate)
     useEffect(() => {
         const handlePopState = () => {
         if (isOpen) {
-            setIsOpen(false); // close if open
+            setIsOpen(false); 
         }
-        };
+    };
 
         window.addEventListener("popstate", handlePopState);
         return () => {
@@ -94,7 +91,12 @@ const About: React.FC = () => {
                     >
                     <div className="main-about-nav">
                         <h1>✔️ About</h1>
-                        <button onClick={() => setIsOpen(false)}>❌</button>
+                        <motion.div
+                        animate={{ rotate: 180 }}
+                        transition={{ duration: 1.5 }}
+                        >
+                            <button onClick={() => setIsOpen(false)}>❌</button>
+                        </motion.div>
                     </div>
                     <div className="main-about-nav-section">
                         <p>

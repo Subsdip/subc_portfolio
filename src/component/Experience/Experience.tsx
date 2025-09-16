@@ -105,7 +105,12 @@ const Experience: React.FC = () => {
                         >
                             <div className="main-experience-nav">
                                 <h1>✔️ Experience</h1>
-                                <button onClick={() => setIsOpen(false)}>❌</button>
+                                <motion.div
+                                animate={{ rotate: 180 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <button onClick={() => setIsOpen(false)}>❌</button>
+                                </motion.div>
                             </div>
                             {sectionObj.map((project, index) => (
                                 <div className="main-experience-section" key={index}>

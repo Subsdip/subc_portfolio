@@ -31,6 +31,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     min-width: 35vw;
     min-height: 55vh;
 }

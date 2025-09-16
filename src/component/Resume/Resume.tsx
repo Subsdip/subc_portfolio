@@ -49,7 +49,12 @@ const Resume: React.FC = () => {
                         >
                             <div className="main-resume-nav">
                                 <h1>✔️ Resume</h1>
-                                <button onClick={() => setIsOpen(false)}>❌</button>
+                                <motion.div
+                                animate={{ rotate: 180 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <button onClick={() => setIsOpen(false)}>❌</button>
+                                </motion.div>
                             </div>
                             <iframe 
                                 src="/SUBHADIP_MUKHERJEE_CV.pdf" 
