@@ -2,6 +2,8 @@ import React from "react";
 import './About.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import type { RootState } from '../../types/store.ts';
 
 
 const About: React.FC = () => {
@@ -23,6 +25,7 @@ const About: React.FC = () => {
 
 
     const [isOpen, setIsOpen] = useState(false);
+    const dark = useSelector((state: RootState) => state.theme.dark);
 
     const openContainer = () => {
         setIsOpen(true);
@@ -57,7 +60,8 @@ const About: React.FC = () => {
                         times: [0, 0.2, 1],
                         ease: ["easeInOut", "easeOut"],
                     },
-                }}>
+                }}
+                style={{background: dark ? "linear-gradient(135deg, #1f7f6b, #5e2a5e)" : "linear-gradient(135deg, #7fffd4, #dda0dd)"}}>
                 <motion.div
                 initial={{ y: 0 }}
                 animate={{ y: [0, -3, 0] }} 
@@ -69,7 +73,7 @@ const About: React.FC = () => {
                 }}>
                     <h1>🧑</h1>
                 </motion.div>
-                <h2 style={{color: "#004646"}}>About</h2>
+                <h2 >About</h2>
             </motion.div>
 
             <AnimatePresence>
@@ -87,9 +91,12 @@ const About: React.FC = () => {
                     exit={{ scale: 0.8 }}
                     transition={{ type: "spring", duration: 0.5, visualDuration: 0.2, bounce: 0.4 }}
                     className="main-about-flex-increase-expanded"
+                    style={{background: dark ? "black" : "linear-gradient(135deg, #7fffd4, #dda0dd)"}}
                     onClick={(e) => e.stopPropagation()}
                     >
-                    <div className="main-about-nav">
+                    <div 
+                    className="main-about-nav"
+                    style={{background: dark ? "black" : "linear-gradient(135deg, #7fffd4, #dda0dd)"}}>
                         <h1>✔️ About</h1>
                         <motion.div
                         animate={{ rotate: 180 }}

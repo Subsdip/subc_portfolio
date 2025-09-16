@@ -37,7 +37,6 @@
 }
 
 .main-project-flex-increase-expanded{
-    background: linear-gradient(135deg, #7fffd4, #ce8cfd);
     border-radius: 20px;
     width: 60%;
     height: 60%;
@@ -49,7 +48,6 @@
 }
 
 .main-project-nav{
-    background: linear-gradient(135deg, #7fffd4, #ce8cfd);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;

@@ -60,6 +60,15 @@
     gap: 20px;
 }
 
+.main-flex-icons button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: none;
+    padding: none;
+    color: #006666;
+}
+
 @media (max-width: 800px) {
     .main-flex-icons {
         min-height: 10vh;

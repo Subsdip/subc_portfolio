@@ -37,8 +37,6 @@
 }
 
 .main-experience-flex-increase-expanded{
-    background: linear-gradient(135deg, #7fffd4, #fca07e);
-    /* background-color: #F9FAFB; */
     border-radius: 20px;
     width: 60%;
     height: 60%;
@@ -50,7 +48,6 @@
 }
 
 .main-experience-nav{
-    background: linear-gradient(135deg, #7fffd4, #fca07e);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;

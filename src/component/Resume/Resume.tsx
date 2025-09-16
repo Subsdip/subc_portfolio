@@ -2,9 +2,13 @@ import React from "react";
 import './Resume.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import type { RootState } from '../../types/store.ts';
+
 
 const Resume: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const dark = useSelector((state: RootState) => state.theme.dark);
 
     return (
         <>
@@ -45,9 +49,11 @@ const Resume: React.FC = () => {
                             exit={{ scale: 0.8 }}
                             transition={{ type: "spring", duration: 0.5, visualDuration: 0.2, bounce: 0.4 }}
                             className="main-resume-flex-increase-expanded"
+                            style={{background: dark ? "black" : "linear-gradient(135deg, #7fffd4, #ffdab9)"}}
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <div className="main-resume-nav">
+                            <div className="main-resume-nav"
+                            style={{background: dark ? "black" : ""}}>
                                 <h1>✔️ Resume</h1>
                                 <motion.div
                                 animate={{ rotate: 180 }}

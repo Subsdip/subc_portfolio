@@ -9,6 +9,8 @@ import Skills from "../Skills/Skills.tsx";
 import { ArrowRight, ArrowLeft} from "lucide-react";
 import { motion, AnimatePresence, usePresenceData, wrap, useMotionValue} from "motion/react";
 import { useState, forwardRef, useRef, useEffect } from "react";
+import { useSelector } from "react-redux";
+import type { RootState } from '../../types/store.ts';
 
 
 const Upperbound: React.FC = () => {
@@ -22,6 +24,7 @@ const Upperbound: React.FC = () => {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [direction, setDirection] = useState<1 | -1>(1);
+    const dark = useSelector((state: RootState) => state.theme.dark);
 
     function setSlide(newDirection: 1 | -1) {
         const nextIndex = wrap(0, items.length, selectedIndex + newDirection);
@@ -42,6 +45,7 @@ const Upperbound: React.FC = () => {
         <>
             <div
             className="main-upperbound-flex"
+            style={{ background: dark ? "none" : "linear-gradient(180deg, white, aquamarine)" }}
             onPointerMove={(e) => {
                 gradientX.set(e.clientX / width);
                 gradientY.set(e.clientY / height);
@@ -110,17 +114,21 @@ const Slide = forwardRef(function Slide(
 });
 
 function LeftArrow() {
+    const dark = useSelector((state: RootState) => state.theme.dark);
+
     return (
         <div>
-            <ArrowLeft size={32} color="#017f7fff"/>
+            <ArrowLeft size={32} color={dark ? "white" : "#017f7fff"}/>
         </div>
     );
 }
 
 function RightArrow() {
+    const dark = useSelector((state: RootState) => state.theme.dark);
+
     return (
         <div>
-            <ArrowRight size={32} color="#017f7fff"/>
+            <ArrowRight size={32} color={dark ? "white" : "#017f7fff"}/>
         </div>
     );
 }

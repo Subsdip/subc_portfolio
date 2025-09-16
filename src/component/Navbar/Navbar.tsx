@@ -2,31 +2,14 @@ import React from "react";
 import './Navbar.css';
 import Circle from "../Circle/Circle.tsx";
 import Profilepic from '../../assets/profile pic.jpg';
-import {FaGithub, FaLinkedin } from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
+import { useSelector, useDispatch } from "react-redux";
+import type { RootState } from '../../types/store.ts';
+import { toggleTheme } from '../../types/themeSlice.ts';
 
 const Navbar: React.FC = () => {
-
-    // const text = ``
-    // const letter = text.split("");
-
-    // const container = {
-    //     hidden: { opacity: 0 },
-    //     visible: {
-    //     opacity: 1,
-    //     transition: {
-    //         staggerChildren: 0.05,
-    //     },
-    //     },
-    // };
-
-    //  const child = {
-    //     hidden: { opacity: 0, y: "0.25em" },
-    //     visible: {
-    //     opacity: 1,
-    //     y: "0em",
-    //     transition: { duration: 0.3},
-    //     },
-    // };
+    const dispatch = useDispatch();
+    const dark = useSelector((state: RootState) => state.theme.dark);
 
     return(
         <>
@@ -43,27 +26,24 @@ const Navbar: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                            <FaLinkedin size={32} color="#006666"/>
+                            <FaLinkedin size={32} color={dark ? "#ffffff" : "#006666"}/>
                         </a>
                         <a
                         href="https://github.com/Subsdip"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                            <FaGithub size={32} color="#006666"/>
+                            <FaGithub size={32} color={dark ? "#ffffff" : "#006666"}/>
+                        </a>
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <button onClick={() => dispatch(toggleTheme())}>
+                                {dark ? <FaMoon size={32} color="white"/> : <FaSun size={32}/>}
+                            </button>
                         </a>
                 </div>
-                {/* <motion.div 
-                className="main-flex-para"
-                variants={container}
-                initial="hidden"
-                animate="visible">
-                    {letter.map((char, index) => (
-                        <motion.span key={index} variants={child} style={{ display: "inline-block"}}>
-                            {char === " " ? "\u00A0" : char}
-                        </motion.span>
-                    ))}
-                </motion.div> */}
             </div>
         </>
     );
