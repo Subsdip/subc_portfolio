@@ -4,11 +4,13 @@ import './index.css'
 import Home from './pages/home/Home.tsx'
 import {store} from './types/store.ts';
 import { Provider } from 'react-redux';
+import { Analytics } from "@vercel/analytics/next"
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Provider store={store}>
-      <Home />
-    </Provider>
-  </StrictMode>,
+    <StrictMode>
+          <Provider store={store}>
+          <Home />
+          <Analytics/>
+        </Provider>
+    </StrictMode>,
 )
