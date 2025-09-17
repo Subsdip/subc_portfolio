@@ -76,9 +76,12 @@
 .main-about-nav-section {
     padding: 30px;
     margin-top: 10px;
-    font-size: large;
     font-weight: 600;
-    line-height: 4dvh;
     white-space: pre-line; 
     text-align: left;
+}
+
+.main-about-nav-section > p {
+    font-size: clamp(.9rem, 1.4vw, 2rem);
+    line-height: clamp();
 }
