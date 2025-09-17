@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
                 <Circle src={Profilepic}/>
                 <div className="main-flex-intro">
                     <h1 style={{fontSize: "clamp(1.9rem, 4vw, 2.5rem)"}}>Subhadip Mukherjee</h1>
-                    <h2 style={{fontSize: "clamp(1.4rem, 1vw, 2rem)"}}>🚀Java Full Stack Engineer ☕💻🌐</h2>
+                    <h2 style={{fontSize: "clamp(1.4rem, 1vw, 2rem)"}}>Full Stack Java Developer☕💻🌐</h2>
                     <h5 style={{fontSize: "clamp(1rem, .5vw, 2rem)"}}>"I build reliable digital experiences that just work."</h5>
                 </div>
                 <div className="main-flex-icons">
