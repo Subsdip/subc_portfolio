@@ -13,14 +13,6 @@ const About: React.FC = () => {
 
                     I am proficient in Java (Core & Reactive), JavaScript, Spring Boot, J2EE, PostgreSQL, Oracle SQL, MongoDB, Apache Kafka, Docker, and modern web technologies. I am passionate about leveraging reactive programming, event-driven architectures, and microservices to deliver business-critical solutions with reliability and speed.
 
-                    Beyond development, I actively contribute to improving observability, backpressure handling, and performance tuning, ensuring robust systems under load. My dedication has been recognized with Beyond Performance and Delivery Excellence Awards for client-side impact and on-time, high-quality delivery.
-
-                    I am a Software Engineer with hands-on experience in building high-performance, scalable, and event-driven applications using Spring Boot, Reactive Java, and Apache Kafka. Currently at Infosys, I architect and deliver microservices capable of handling 10K+ concurrent users with 99.9% uptime, focusing on real-time data processing, fault-tolerant messaging pipelines, and modular API design.
-
-                    My work spans the full software lifecycle: from designing efficient database schemas and optimizing complex queries to implementing secure, JWT-based authentication services and responsive UI components with JSP and Thymeleaf. I take pride in enhancing system performance, reducing latency, and ensuring maintainable, reusable solutions across teams.
-
-                    I am proficient in Java (Core & Reactive), JavaScript, Spring Boot, J2EE, PostgreSQL, Oracle SQL, MongoDB, Apache Kafka, Docker, and modern web technologies. I am passionate about leveraging reactive programming, event-driven architectures, and microservices to deliver business-critical solutions with reliability and speed.
-
                     Beyond development, I actively contribute to improving observability, backpressure handling, and performance tuning, ensuring robust systems under load. My dedication has been recognized with Beyond Performance and Delivery Excellence Awards for client-side impact and on-time, high-quality delivery.`;
 
 
