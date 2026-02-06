@@ -8,68 +8,77 @@ import type { RootState } from '../../types/store.ts';
 const Skills: React.FC = () => {
     const sectionObj = [
         {
-            skillName: "🖥️|Programming Languages",
+            skillName: "Programming Languages",
             bulletsProj: [
                 {
-                    one:`🟨📜|Javascript, ☕|Java(Core and Reactive)`
+                    one: "Java (8 / 11 / 17 / 21 / 25 – Core, Streams, Concurrency, Reactive), JavaScript (ES6+)"
                 }
             ]
         },
         {
-            skillName: "⚙️|Frameworks/Library",
+            skillName: "Backend Frameworks & Platforms",
             bulletsProj: [
                 {
-                    one:`🌱|Springboot, 🏢|J2EE, ⚛️|React`
+                    one: "Spring Boot, Spring WebFlux, Spring MVC, J2EE"
                 }
             ]
         },
         {
-            skillName: "🗄️|Databases",
+            skillName: "API & Web Technologies",
             bulletsProj: [
                 {
-                    one:`🟥🏺|Oracle, 🍃|MongoDB`
+                    one: "RESTful Web Services, Microservices Architecture"
                 }
             ]
         },
         {
-            skillName: "🗄️|Build Tools",
+            skillName: "Frontend Exposure",
             bulletsProj: [
                 {
-                    one:`🐜|Apache Ant, 🔨📦|Maven`
+                    one: "React, Thymeleaf, JSP"
                 }
             ]
         },
         {
-            skillName: "🔄|Version Control",
+            skillName: "Databases & Persistence",
             bulletsProj: [
                 {
-                    one:`🐢🔧|Tortoise Git, 🟧🔗|Git`
+                    one: "Oracle SQL, PostgreSQL, MongoDB, Hibernate, JPA, JDBC"
                 }
             ]
         },
         {
-            skillName: "Others",
+            skillName: "Messaging & Distributed Systems",
             bulletsProj: [
                 {
-                    one:"🐳|Docker",
-                },
-                {
-                    two:"✅🧪|JUnit",
-                },
-                {
-                    three:"🌀|Apache Kafka",
-                },
-                {
-                    four:"🔄📡|Websocket",
-                },
-                {
-                    five:"📄☕|JSP",
-                },
-                {
-                    six:"🌿📘|ThymeLeaf",
+                    one: "Apache Kafka, Event-Driven Architecture"
                 }
             ]
         },
+        {
+            skillName: "Testing & Quality Assurance",
+            bulletsProj: [
+                {
+                    one: "JUnit 5, Postman"
+                }
+            ]
+        },
+        {
+            skillName: "Build & Dependency Management",
+            bulletsProj: [
+                {
+                    one: "Maven, Apache Ant"
+                }
+            ]
+        },
+        {
+            skillName: "Version Control",
+            bulletsProj: [
+                {
+                    one: "Git, TortoiseGit"
+                }
+            ]
+        }
     ]
 
 

@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from '../../types/store.ts';
 import { toggleTheme } from '../../types/themeSlice.ts';
 
+
 const Navbar: React.FC = () => {
     const dispatch = useDispatch();
     const dark = useSelector((state: RootState) => state.theme.dark);
@@ -40,7 +41,7 @@ const Navbar: React.FC = () => {
                         rel="noopener noreferrer"
                         >
                             <button onClick={() => dispatch(toggleTheme())}>
-                                {dark ? <FaMoon size={32} color="white"/> : <FaSun size={32}/>}
+                                {dark ? <FaMoon size={32} style={{cursor: "pointer"}} color="white"/> : <FaSun size={32} style={{cursor: "pointer"}} />}
                             </button>
                         </a>
                 </div>

@@ -8,7 +8,7 @@ import type { RootState } from '../../types/store.ts';
 const Experience: React.FC = () => {
     const sectionObj = [
         {
-            title: "Digital Systems Engineer",
+            title: "Full Stack Java Developer",
             companyName: "Tata Consultancy services ltd",
             techStack: "J2EE, JSP, Oracle Sql, JBOSS",
             bulletsProj: [
@@ -34,28 +34,23 @@ const Experience: React.FC = () => {
             ]
         },
         {
-            title: "Associate Consultant",
+            title: "Full Stack Java Developer",
             companyName: "Infosys ltd",
-            techStack: " Spring Boot, Reactive Java, PostgreSQL, Apache Kafka",
+            techStack: " Spring WebFlux, Java 17+, PostgreSQL, Apache Kafka",
             bulletsProj: [
                 {
-                    one: `Crafted intuitive UI components using JSP, enhancing user interaction and overall application usability.`
+                    one: `Engineered highly scalable, non-blocking microservices using Spring WebFlux (Reactive Java) and Apache 
+                          Kafka. This architecture successfully handled 100K+ concurrent requests during peak loads, maintaining a 
+                          99.99% system availability SLA.`
                 },
                 {
-                    two: `Developed reusable utility methods in Java to streamline development and code maintainability.`
+                    two: `Led a strategic overhaul of the PostgreSQL persistence layer. By implementing indexing strategies, query plan 
+                          analysis, I achieved a 40% reduction in average API latency and optimized resource utilization across 
+                          high-traffic clusters.`
                 },
                 {
-                    three: `Developed Batch Jobs, stored procedures and functions in Sql, to enhance data manipulation and processing.`
-                },
-                {
-                    four: `Utilized JDBC and JPA for seamless database interaction within the application.`
-                },
-                {
-                    five: `Revamped existing features and fixed critical bugs, elevating system performance and user satisfaction.`
-                },
-                {
-                    six: `Accelerated query performance by implementing effective indexing and joining techniques, resulting in 
-                            faster data retrieval and improved overall application responsiveness. `
+                    three: `Spearheaded the migration of monolithic legacy modules into a distributed microservices. Integrated circuit 
+                            breaker patterns (Resilience4j) to ensure fault tolerance and system stability under high-contention scenarios.`
                 }
             ]
         }

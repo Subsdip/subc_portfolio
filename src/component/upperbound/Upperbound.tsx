@@ -76,7 +76,7 @@ const Upperbound: React.FC = () => {
                     </div>
                 </motion.div>
             </div>
-            <h5 style={{fontSize: "clamp(.7rem, .2vw, 1.5rem)"}}>© 2025 Crafted by Subc 😄</h5>
+            <h5 style={{fontSize: "clamp(.7rem, .2vw, 1.5rem)"}}>© {new Date().getFullYear()} Crafted by Subc 😄</h5>
         </>
     );
 };

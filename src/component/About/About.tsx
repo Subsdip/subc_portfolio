@@ -7,13 +7,13 @@ import type { RootState } from '../../types/store.ts';
 
 
 const About: React.FC = () => {
-    const aboutMe = `I am a Software Engineer with hands-on experience in building high-performance, scalable, and event-driven applications using Spring Boot, Reactive Java, and Apache Kafka. Currently at Infosys, I architect and deliver microservices capable of handling 10K+ concurrent users with 99.9% uptime, focusing on real-time data processing, fault-tolerant messaging pipelines, and modular API design.
+    const aboutMe = `I am a Software Engineer with extensive hands-on experience in building high-performance, scalable, and event-driven applications using Spring Boot, Reactive Java, and Apache Kafka. At Infosys, I design and deliver resilient microservices capable of handling 10K+ concurrent users with 99.9% uptime, with a strong emphasis on real-time data processing, fault-tolerant messaging pipelines, and modular, well-structured APIs.
 
-                    My work spans the full software lifecycle: from designing efficient database schemas and optimizing complex queries to implementing secure, JWT-based authentication services and responsive UI components with JSP and Thymeleaf. I take pride in enhancing system performance, reducing latency, and ensuring maintainable, reusable solutions across teams.
+                    My responsibilities span the entire software development lifecycle, from designing efficient database schemas and tuning complex SQL queries to implementing secure authentication and authorization services using JWT. I have also worked on developing server-side UI components using JSP and Thymeleaf, ensuring seamless integration between backend services and presentation layers. I consistently focus on improving system throughput, reducing response latency, and creating maintainable, reusable solutions that scale across teams.
 
-                    I am proficient in Java (Core & Reactive), JavaScript, Spring Boot, J2EE, PostgreSQL, Oracle SQL, MongoDB, Apache Kafka, Docker, and modern web technologies. I am passionate about leveraging reactive programming, event-driven architectures, and microservices to deliver business-critical solutions with reliability and speed.
+                    I bring strong proficiency in Java (Core and Reactive), JavaScript, Spring Boot, J2EE, PostgreSQL, Oracle SQL, MongoDB, Apache Kafka, Docker, and modern web technologies. I am deeply interested in leveraging reactive programming models, event-driven architectures, and microservices-based systems to build business-critical platforms that demand reliability, scalability, and speed.
 
-                    Beyond development, I actively contribute to improving observability, backpressure handling, and performance tuning, ensuring robust systems under load. My dedication has been recognized with Beyond Performance and Delivery Excellence Awards for client-side impact and on-time, high-quality delivery.`;
+                    Beyond feature development, I actively contribute to observability improvements, backpressure management, and performance tuning, ensuring systems remain stable and responsive under high load conditions. My contributions and commitment to quality delivery have been recognized with Beyond Performance and Delivery Excellence Awards for driving measurable client impact and consistently meeting delivery timelines.`;
 
 
     const [isOpen, setIsOpen] = useState(false);
